@@ -44,8 +44,6 @@ public class MessageServiceImplTest {
     @Test
     @Tag("Publishing")
     void test_messageAvailableOnTimeline_whenMessageIsAdded() {
-
-
         messageService.addMessage(userMap.get("Alice"), "I love the weather today.");
 
         assertAll(
@@ -62,7 +60,6 @@ public class MessageServiceImplTest {
     @Test
     @Tag("Timeline")
     void test_messagesAvailableOnTimelineWithTimeHistory_whenMultipleMessagesAreAdded() {
-
         String message1 = "Darn! We lost!";
         messageService.addMessage(userMap.get("Bob"), message1);
         String message2 = "Good game though.";
